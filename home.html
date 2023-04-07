@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Society of Dead Artists</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	
+    <style>
+        body {
+			background-color: whitesmoke;
+			color: black;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+        .main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+            margin-bottom: 200px;
+		}
+
+        header {
+			background-color: whitesmoke;
+			height: 90px;
+			margin-top: 10px;
+		}
+
+		.header_flexbox{
+			background-color: whitesmoke;
+			display: flex;
+			flex-direction: row;
+			padding: 0px;
+			margin-bottom: 0px;
+			height: 80px;
+		}
+
+		.anchors_flexbox{
+			background-color: whitesmoke;
+			padding-left: 10px;
+			flex: 6;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: left;
+			height: 80px;
+		}
+
+		.title_flexbox{
+			background-color: whitesmoke;
+			flex: 6;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			height: 80px;
+		}
+
+		.margin_flexbox{
+			flex:4.75
+		}
+
+		.logo_flexbox{
+			background-color: whitesmoke;
+			flex: 1.25;	
+		}
+
+		.logo_flexbox img{
+			height: 80px;
+			max-width: 80px;
+		}
+
+		.poster_flexbox{
+			background-color: whitesmoke;
+			width: auto;
+			margin: 15px;
+			border-radius: 20px;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 300px;
+			margin-top: 0px;
+			overflow: hidden;
+			animation: transitionIn 0.75s;
+			position: relative;
+  			text-align: center;
+		}
+		.poster{
+			width: 100%;
+			border-radius: 20px;
+			transition: transform .3s;
+			overflow: hidden;
+		}
+		.poster:hover{
+			transform:scale(1.08);
+			overflow: hidden;
+		}
+
+
+
+        header a {
+			color: rgb(45, 45, 45);
+			text-decoration: none;
+			font-size: 22px;
+			margin: 0 30px;
+            transition: 0.1s;
+		}
+
+        .links:hover{
+            transform:scale(1.2) ;
+        }
+
+        .frame {
+			margin-top: 10px;
+			width: 60%;
+			height: 500px;
+			border: none;
+		}
+
+        .text {
+			width: 33%;
+			margin-top: 50px;
+		}
+
+		.title_text{
+			color: rgb(45, 45, 45);
+			font-size: 36px;
+			margin: 0px;
+			
+		}
+
+		.poster_text{
+			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+			font-family: Special Elite;
+			font-size: 76px;
+			width: 80%;
+			color: black;
+			text-shadow: beige 0px 0px 5px;
+			font-weight: 600;
+
+		}
+
+		.posterlink{
+			color: inherit; 
+  			text-decoration: inherit; 
+		}
+
+		@keyframes transitionIn{
+			from{
+				opacity:0;
+			}
+			to{
+				opacity:1;
+			}
+		}
+    </style>   
+</head>
+
+<body>
+
+    <header>
+		<div class="header_flexbox">
+			<div class="anchors_flexbox">
+				<a class="links" href="home.html" class="homelink">Symposium</a>
+				<a class="links" href="about.html" class="aboutlink">Manifesto</a>
+				<a class="links" href="connect.html" class="connectlink">Contact</a>
+			</div>
+			<div class="title_flexbox"><p class="title_text">Society Of Dead Artists</p></div>
+			<div class="margin_flexbox"></div>
+			<div class="logo_flexbox"><img src="logo_tr2.png"></div>			
+		</div>			
+    </header>
+	<div class="poster_flexbox">
+		<a href="https://www.youtube.com/@societyofdeadartists"><img class="poster" src="lib.jpg"></a>
+		<div class="poster_text"><a class="posterlink" href="https://www.youtube.com/@societyofdeadartists">Uniting creative writing groups across the world</a></div>
+	</div>
+    
+</body>
+</html>

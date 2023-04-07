@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SDA</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+			background-color: whitesmoke;
+			color: black;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+        .main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: left;
+			opacity: 0;
+			animation: transitionIn 0.75s 0.9s forwards;
+		}
+
+        header {
+			background-color: whitesmoke;
+			height: 90px;
+			margin-top: 10px;
+		}
+
+		.header_flexbox{
+			background-color: whitesmoke;
+			display: flex;
+			flex-direction: row;
+			padding: 0px;
+			margin-bottom: 0px;
+			height: 80px;
+		}
+
+		.anchors_flexbox{
+			background-color: whitesmoke;
+			padding-left: 10px;
+			flex: 6;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: left;
+			height: 80px;
+		}
+
+		.title_flexbox{
+			background-color: whitesmoke;
+			flex: 6;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			height: 80px;
+		}
+
+		.margin_flexbox{
+			flex:4.75
+		}
+
+		.logo_flexbox{
+			background-color: whitesmoke;
+			flex: 1.25;
+			
+			
+		}
+
+		.logo_flexbox img{
+			height: 80px;
+			max-width: 80px;
+		}
+
+        header a {
+			color: rgb(45, 45, 45);
+			text-decoration: none;
+			font-size: 22px;
+			margin: 0 30px;
+            transition: 0.1s;
+		}
+
+        .links:hover{
+            transform:scale(1.2) ;
+        }
+
+		.text {
+			width: 33%;
+			margin-top: 50px;
+		}
+
+		.title_text{
+			color: rgb(45, 45, 45);
+			font-size: 36px;
+			margin: 0px;
+			
+		}
+
+        .title2{
+            display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 60px;
+			text-align: center;
+			opacity: 0;
+			animation: transitionIn 0.75s 0.1s forwards;
+        }
+
+        .title_text2{
+			color: rgb(45, 45, 45);
+			margin-top: 47px;
+			margin-left: 11px;
+			margin-bottom: 50px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .text2 {
+			color: rgb(45, 45, 45);
+			width: 33%;
+			margin-top: 30px;
+            font-size: 18px;
+			margin-bottom: 400px;
+		}
+
+		.breakbox1, .breakbox2, .breakbox3, .breakbox4{
+			margin-top: 0px;
+			background-color: #CB5245;
+			width: 100%;
+			border-width:0px;
+			height: 4px;
+			margin-bottom: 3px;
+			opacity: 0;
+		}
+
+		.breakbox1{
+			animation: transitionIn2 0.75s forwards;
+		}
+
+		.breakbox2{
+			animation-name: transitionIn2; 
+			animation-duration: 0.75s;  
+			animation-fill-mode: forwards;
+		}
+
+		.breakbox3, .breakbox4{
+			animation-name: transitionIn2; 
+			animation-duration: 0.75s;  
+			animation-fill-mode: forwards;
+		}
+
+
+
+
+		@keyframes transitionIn{
+			from{
+				opacity:0;
+				transform:rotateX(-10deg);
+			}
+			to{
+				opacity:1;
+				transform:rotateX(0);
+			}
+		}
+
+		@keyframes transitionIn2{
+			from{
+				opacity:0;
+				width:0%;
+			}
+			to{
+				opacity:1;
+				width: 100%;
+			}
+		}
+
+
+    </style>   
+</head>
+
+<body>
+    <header>
+		<div class="header_flexbox">
+			<div class="anchors_flexbox">
+				<a class="links" href="home.html" class="homelink">Symposium</a>
+				<a class="links" href="about.html" class="aboutlink">Manifesto</a>
+				<a class="links" href="connect.html" class="connectlink">Contact</a>
+			</div>
+			<div class="title_flexbox"><p class="title_text">Society Of Dead Artists</p></div>
+			<div class="margin_flexbox"></div>
+			<div class="logo_flexbox"><img src="logo_tr2.png"></div>			
+		</div>			
+    </header>
+	<hr class="breakbox1">
+	<hr class="breakbox2">
+
+    <div class="title2">
+        <p class="title_text2">Placeholder Title</p>
+    </div>
+
+	<hr class="breakbox3">
+	<hr class="breakbox4">
+
+    <div class="main">
+		<p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non magna sed lorem convallis commodo eget vitae nibh. Etiam posuere aliquam magna, quis pulvinar tellus volutpat vel. Aliquam at nisi euismod, aliquam sapien ut, venenatis neque. Nullam vel ex sit amet nunc fringilla fringilla ac at enim. Sed fermentum felis sit amet purus suscipit, eu facilisis velit faucibus. Sed maximus, quam vitae maximus ultrices, purus ipsum laoreet turpis, euismod lobortis metus sapien quis libero. Duis eu eleifend velit. Phasellus fringilla tortor quis dui ultrices rutrum. Aliquam in iaculis lorem, et eleifend mi. Phasellus eget orci convallis, pellentesque lectus vitae, congue arcu. Curabitur feugiat, arcu ut ullamcorper fringilla, turpis nisi auctor risus, id tristique lorem diam eget felis. Etiam ornare dignissim nisl vitae pharetra. Vivamus ultricies ac dui sit amet tincidunt. Ut venenatis porta tellus, vitae iaculis odio accumsan et. Suspendisse in laoreet risus, non eleifend augue. <br><br>
+
+			Etiam tristique, dolor at rhoncus blandit, ipsum purus ornare diam, nec vehicula risus urna quis sapien. Nunc efficitur, turpis pulvinar auctor tincidunt, nibh magna lacinia leo, sit amet pharetra tortor justo nec mi. In id est posuere, sodales magna tristique, malesuada tellus. Nunc pretium orci et odio viverra dictum. Aenean sapien magna, eleifend vel pharetra sed, lobortis ac risus. Nam lectus mauris, bibendum vulputate massa quis, posuere sollicitudin lacus. Fusce vitae mauris et purus tempor tempor nec luctus elit. Quisque euismod mi non felis blandit ullamcorper. Ut tempus eu lorem sed mattis. Morbi eu lobortis purus. Integer dolor nibh, consequat nec gravida sit amet, porttitor at nibh. Curabitur eleifend metus vel porta venenatis. Vivamus a nibh faucibus, posuere urna a, vestibulum sapien. Duis interdum, purus eu congue dapibus, sapien velit rhoncus metus, sit amet mattis nunc tellus a lectus. <br><br>
+			
+			Vivamus lacinia eget est eu fermentum. Aliquam quis lacus ex. Ut sed diam sed massa laoreet auctor. Curabitur in enim sed nisl imperdiet porta. Vivamus ultricies velit vel dictum malesuada. Nam rhoncus diam semper, consectetur dolor sit amet, tristique est. Cras accumsan sem sed turpis feugiat consectetur. Sed id congue purus, vitae dignissim metus. Nunc vitae augue euismod, scelerisque orci id, volutpat ipsum. In a nunc non est consectetur posuere. Mauris vestibulum orci in ante suscipit, ac suscipit ante tincidunt. Quisque ipsum orci, congue et aliquam non, faucibus ut nibh. Maecenas varius consequat erat nec rutrum. In faucibus consectetur felis, vel egestas neque sagittis egestas. Nulla facilisi.<br><br>
+			
+			Donec nec neque lacus. Nam euismod non nibh rutrum posuere. Vestibulum blandit lacinia ornare. Integer vel enim in eros dignissim suscipit. Praesent est urna, dignissim sit amet magna ac, rutrum viverra urna. Pellentesque venenatis nec est quis luctus. Maecenas magna nunc, luctus nec ultricies sollicitudin, laoreet at turpis. Aenean vestibulum, erat in aliquam pretium, enim ligula imperdiet turpis, vel ornare ex est rhoncus ante. Nunc laoreet nisi sed ligula tristique feugiat. Sed interdum gravida eros et vestibulum. Nulla sodales aliquam diam, ac bibendum libero porta ut. Praesent aliquam fringilla risus, et pulvinar elit ornare at. Duis fringilla metus vel facilisis pretium.<br><br>
+			
+			Fusce eu congue sapien. Aliquam erat volutpat. Suspendisse sed elit quam. Proin lorem ligula, malesuada sed luctus pharetra, blandit non purus. Nam metus sapien, tempus non pretium ac, facilisis a leo. Sed mollis nulla sem, et suscipit tortor pharetra vitae. Donec sodales nibh nec quam eleifend suscipit. Suspendisse varius neque non placerat porttitor. Suspendisse fermentum ullamcorper magna eu tempus.</p>
+	</div>
+    
+</body>
+</html>
