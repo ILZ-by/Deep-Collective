@@ -10,8 +10,8 @@
     <style>
         body {
 			background-color: whitesmoke;
-			color: black;
-			font-family: Arial, sans-serif;
+			color: rgb(45, 45, 45);
+			font-family: Special Elite, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
@@ -76,6 +76,7 @@
 		.logo_flexbox img{
 			height: 80px;
 			max-width: 80px;
+			margin-right: 20px;
 		}
 
         header a {
@@ -96,9 +97,10 @@
 		}
 
 		.title_text{
-			color: rgb(45, 45, 45);
+			color: #CB5245;
 			font-size: 36px;
 			margin: 0px;
+			text-shadow: rgb(45, 45, 45, 0.4) 0px 0px 10px;
 			
 		}
 
@@ -120,6 +122,7 @@
 			margin-bottom: 50px;
             font-size: 36px;
             font-weight: bold;
+			padding-top: 8px;
         }
 
         .text2 {
@@ -180,8 +183,46 @@
 				width: 100%;
 			}
 		}
-	    
-	    @media only screen and (max-width: 1200px){
+
+		@media only screen and (max-width : 800px) {
+			header{
+				height: 140px;
+			}
+
+			.header_flexbox{
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+  				text-align: center;
+				height: 130px;
+			}
+
+			.anchors_flexbox{
+				position: absolute;
+				top: 42%;
+				text-align: center;
+			}
+
+			.margin_flexbox{
+				display: none;
+			}
+
+			.title_flexbox{
+				position: absolute;
+				top: 0%;
+				text-align: center;
+				margin-left: 9px;
+			}
+
+			.logo_flexbox{
+				position: absolute;
+				left: 90%;
+				top: 16%;
+			}
+		}
+
+		@media only screen and (max-width: 1500px){
 			.margin_flexbox{ 
      			width: 40%;
 			}
@@ -194,9 +235,9 @@
 			}
 		}
 
-		@media only screen and (max-width: 800px){
-  			.title_flexbox{ 
-     			display: none;
+		@media only screen and (max-width: 1300px){
+  			.margin_flexbox{ 
+     			flex: 1.5;
 			}
 		}
 
