@@ -6,6 +6,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 	
     <style>
         body {
@@ -141,11 +143,11 @@
   			top: 50%;
   			left: 50%;
   			transform: translate(-50%, -50%);
-			font-family: Special Elite;
+			font-family: Playfair Display SC;
 			font-size: 76px;
 			width: 80%;
-			color: black;
-			text-shadow: beige 0px 0px 5px;
+			color: rgb(238, 255, 161);
+			text-shadow: rgb(0, 0, 0) 0px 0px 5px;
 			font-weight: 600;
 			pointer-events: none;
 
@@ -165,7 +167,7 @@
 			}
 		}
 
-		@media only screen and (max-width : 800px) {
+		@media only screen and (max-width : 1300px) {
 			header{
 				height: 140px;
 			}
@@ -183,6 +185,9 @@
 				position: absolute;
 				top: 42%;
 				text-align: center;
+				align-items: center;
+				justify-content: center;
+				padding-left: 0px;
 			}
 
 			.margin_flexbox{
@@ -193,7 +198,6 @@
 				position: absolute;
 				top: 0%;
 				text-align: center;
-				margin-left: 9px;
 			}
 
 			.logo_flexbox{
@@ -213,12 +217,6 @@
 			.links{
 				margin: 10px;
 				padding: 0px;
-			}
-		}
-
-		@media only screen and (max-width: 1300px){
-  			.margin_flexbox{ 
-     			flex: 1.5;
 			}
 		}
 
@@ -242,7 +240,7 @@
     </header>
 	<div class="poster_flexbox">
 		<a href="https://www.youtube.com/@societyofdeadartists"><img class="poster" src="lib.jpg"></a>
-		<div class="poster_text"><a class="posterlink" href="https://www.youtube.com/@societyofdeadartists">Uniting creative writing groups across the world</a></div>
+		<div class="poster_text"><a class="posterlink" href="https://www.youtube.com/@societyofdeadartists"><strong>Uniting creative writing groups across the world</strong></a></div>
 	</div>
     
 </body>
